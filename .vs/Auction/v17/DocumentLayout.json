@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\reyts\\Documents\\lessons\\\u041A\u0443\u0440\u0441\u0430\u0447\\Auction\\",
+  "WorkspaceRootPath": "C:\\Users\\reyts\\Documents\\git\\Auction\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1F38E97D-5481-497F-B98A-8E28701F082E}|Auction\\Auction.csproj|C:\\Users\\reyts\\Documents\\lessons\\\u041A\u0443\u0440\u0441\u0430\u0447\\Auction\\auction\\userpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1F38E97D-5481-497F-B98A-8E28701F082E}|Auction\\Auction.csproj|solutionrelative:auction\\userpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F38E97D-5481-497F-B98A-8E28701F082E}|Auction\\Auction.csproj|C:\\Users\\reyts\\Documents\\lessons\\\u041A\u0443\u0440\u0441\u0430\u0447\\Auction\\auction\\auctionmainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1F38E97D-5481-497F-B98A-8E28701F082E}|Auction\\Auction.csproj|C:\\Users\\reyts\\Documents\\git\\Auction\\auction\\auctionmainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1F38E97D-5481-497F-B98A-8E28701F082E}|Auction\\Auction.csproj|solutionrelative:auction\\auctionmainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F38E97D-5481-497F-B98A-8E28701F082E}|Auction\\Auction.csproj|C:\\Users\\reyts\\Documents\\lessons\\\u041A\u0443\u0440\u0441\u0430\u0447\\Auction\\auction\\auctionmainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1F38E97D-5481-497F-B98A-8E28701F082E}|Auction\\Auction.csproj|C:\\Users\\reyts\\Documents\\git\\Auction\\auction\\auctionmainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F38E97D-5481-497F-B98A-8E28701F082E}|Auction\\Auction.csproj|solutionrelative:auction\\auctionmainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F38E97D-5481-497F-B98A-8E28701F082E}|Auction\\Auction.csproj|c:\\users\\reyts\\documents\\lessons\\\u043A\u0443\u0440\u0441\u0430\u0447\\auction\\auction\\userpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1F38E97D-5481-497F-B98A-8E28701F082E}|Auction\\Auction.csproj|c:\\users\\reyts\\documents\\git\\auction\\auction\\userpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1F38E97D-5481-497F-B98A-8E28701F082E}|Auction\\Auction.csproj|solutionrelative:auction\\userpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F38E97D-5481-497F-B98A-8E28701F082E}|Auction\\Auction.csproj|C:\\Users\\reyts\\Documents\\git\\Auction\\auction\\userpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F38E97D-5481-497F-B98A-8E28701F082E}|Auction\\Auction.csproj|solutionrelative:auction\\userpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,15 +26,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "UserPage.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\reyts\\Documents\\lessons\\\u041A\u0443\u0440\u0441\u0430\u0447\\Auction\\Auction\\UserPage.cs",
+              "DocumentMoniker": "C:\\Users\\reyts\\Documents\\git\\Auction\\Auction\\UserPage.cs",
               "RelativeDocumentMoniker": "Auction\\UserPage.cs",
-              "ToolTip": "C:\\Users\\reyts\\Documents\\lessons\\\u041A\u0443\u0440\u0441\u0430\u0447\\Auction\\Auction\\UserPage.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "ToolTip": "C:\\Users\\reyts\\Documents\\git\\Auction\\Auction\\UserPage.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "Auction\\UserPage.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-12T14:04:13.831Z",
@@ -42,11 +42,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AuctionMainPage.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\reyts\\Documents\\lessons\\\u041A\u0443\u0440\u0441\u0430\u0447\\Auction\\Auction\\AuctionMainPage.cs",
+              "DocumentMoniker": "C:\\Users\\reyts\\Documents\\git\\Auction\\Auction\\AuctionMainPage.cs",
               "RelativeDocumentMoniker": "Auction\\AuctionMainPage.cs",
-              "ToolTip": "C:\\Users\\reyts\\Documents\\lessons\\\u041A\u0443\u0440\u0441\u0430\u0447\\Auction\\Auction\\AuctionMainPage.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "ToolTip": "C:\\Users\\reyts\\Documents\\git\\Auction\\Auction\\AuctionMainPage.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "Auction\\AuctionMainPage.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-12T11:40:12.033Z",
@@ -54,13 +54,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "AuctionMainPage.cs",
-              "DocumentMoniker": "C:\\Users\\reyts\\Documents\\lessons\\\u041A\u0443\u0440\u0441\u0430\u0447\\Auction\\Auction\\AuctionMainPage.cs",
+              "DocumentMoniker": "C:\\Users\\reyts\\Documents\\git\\Auction\\Auction\\AuctionMainPage.cs",
               "RelativeDocumentMoniker": "Auction\\AuctionMainPage.cs",
-              "ToolTip": "C:\\Users\\reyts\\Documents\\lessons\\\u041A\u0443\u0440\u0441\u0430\u0447\\Auction\\Auction\\AuctionMainPage.cs",
+              "ToolTip": "C:\\Users\\reyts\\Documents\\git\\Auction\\Auction\\AuctionMainPage.cs",
               "RelativeToolTip": "Auction\\AuctionMainPage.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAqwDUAAAAsAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA8wDUAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-12T12:01:17.223Z",
               "EditorCaption": ""
@@ -69,9 +69,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "UserPage.cs",
-              "DocumentMoniker": "C:\\Users\\reyts\\Documents\\lessons\\\u041A\u0443\u0440\u0441\u0430\u0447\\Auction\\Auction\\UserPage.cs",
+              "DocumentMoniker": "C:\\Users\\reyts\\Documents\\git\\Auction\\Auction\\UserPage.cs",
               "RelativeDocumentMoniker": "Auction\\UserPage.cs",
-              "ToolTip": "C:\\Users\\reyts\\Documents\\lessons\\\u041A\u0443\u0440\u0441\u0430\u0447\\Auction\\Auction\\UserPage.cs",
+              "ToolTip": "C:\\Users\\reyts\\Documents\\git\\Auction\\Auction\\UserPage.cs",
               "RelativeToolTip": "Auction\\UserPage.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
