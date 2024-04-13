@@ -1,0 +1,13 @@
+C:\Users\reyts\Documents\lessons\Курсач\Auction\Auction\bin\x64\Debug\Auction.exe.config
+C:\Users\reyts\Documents\lessons\Курсач\Auction\Auction\bin\x64\Debug\Auction.exe
+C:\Users\reyts\Documents\lessons\Курсач\Auction\Auction\bin\x64\Debug\Auction.pdb
+C:\Users\reyts\Documents\lessons\Курсач\Auction\Auction\obj\x64\Debug\Auction.csproj.AssemblyReference.cache
+C:\Users\reyts\Documents\lessons\Курсач\Auction\Auction\obj\x64\Debug\Auction.AuctionMainPage.resources
+C:\Users\reyts\Documents\lessons\Курсач\Auction\Auction\obj\x64\Debug\Auction.Properties.Resources.resources
+C:\Users\reyts\Documents\lessons\Курсач\Auction\Auction\obj\x64\Debug\Auction.csproj.GenerateResource.cache
+C:\Users\reyts\Documents\lessons\Курсач\Auction\Auction\obj\x64\Debug\Auction.csproj.CoreCompileInputs.cache
+C:\Users\reyts\Documents\lessons\Курсач\Auction\Auction\obj\x64\Debug\Auction.exe
+C:\Users\reyts\Documents\lessons\Курсач\Auction\Auction\obj\x64\Debug\Auction.pdb
+C:\Users\reyts\Documents\lessons\Курсач\Auction\Auction\obj\x64\Debug\Auction.Resource1.resources
+C:\Users\reyts\Documents\lessons\Курсач\Auction\Auction\obj\x64\Debug\Auction.UserPage.resources
+C:\Users\reyts\Documents\lessons\Курсач\Auction\Auction\bin\x64\Debug\AuctionDB.mdb
