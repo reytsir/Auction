@@ -78,13 +78,18 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AuctionDBDataSet.xsd</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="AuctionMainPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AuctionMainPage.Designer.cs">
       <DependentUpon>AuctionMainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lotsEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lotsEdit.Designer.cs">
+      <DependentUpon>lotsEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -105,6 +110,9 @@
     <EmbeddedResource Include="AuctionMainPage.resx">
       <DependentUpon>AuctionMainPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="lotsEdit.resx">
+      <DependentUpon>lotsEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -124,17 +132,14 @@
     </EmbeddedResource>
     <None Include="AuctionDBDataSet.xsc">
       <DependentUpon>AuctionDBDataSet.xsd</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="AuctionDBDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>AuctionDBDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="AuctionDBDataSet.xss">
       <DependentUpon>AuctionDBDataSet.xsd</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -150,9 +155,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AuctionDB.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="AuctionDB.mdb" />
     <Content Include="Resources\Icon.ico" />
     <None Include="Resources\logo.png" />
     <None Include="Resources\Icon.png" />

@@ -30,5 +30,16 @@ namespace Auction
         {
             
         }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void lotsEditButton_Click(object sender, EventArgs e)
+        {
+            Form lotsEdit = new lotsEdit();
+            lotsEdit.Show();
+        }
     }
 }

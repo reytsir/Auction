@@ -11,7 +11,6 @@ C:\Users\reyts\Documents\lessons\Курсач\Auction\Auction\obj\x64\Debug\Auct
 C:\Users\reyts\Documents\lessons\Курсач\Auction\Auction\obj\x64\Debug\Auction.Resource1.resources
 C:\Users\reyts\Documents\lessons\Курсач\Auction\Auction\obj\x64\Debug\Auction.UserPage.resources
 C:\Users\reyts\Documents\lessons\Курсач\Auction\Auction\bin\x64\Debug\AuctionDB.mdb
-C:\Users\reyts\Documents\git\Auction\Auction\bin\x64\Debug\AuctionDB.mdb
 C:\Users\reyts\Documents\git\Auction\Auction\bin\x64\Debug\Auction.exe.config
 C:\Users\reyts\Documents\git\Auction\Auction\bin\x64\Debug\Auction.exe
 C:\Users\reyts\Documents\git\Auction\Auction\bin\x64\Debug\Auction.pdb
@@ -25,7 +24,4 @@ C:\Users\reyts\Documents\git\Auction\Auction\obj\x64\Debug\Auction.csproj.Genera
 C:\Users\reyts\Documents\git\Auction\Auction\obj\x64\Debug\Auction.csproj.CoreCompileInputs.cache
 C:\Users\reyts\Documents\git\Auction\Auction\obj\x64\Debug\Auction.exe
 C:\Users\reyts\Documents\git\Auction\Auction\obj\x64\Debug\Auction.pdb
-C:\Users\reyts\Documents\git\Auction\Auction\bin\x64\Debug\AuctionDBDataSet.Designer.cs
-C:\Users\reyts\Documents\git\Auction\Auction\bin\x64\Debug\AuctionDBDataSet.xsc
-C:\Users\reyts\Documents\git\Auction\Auction\bin\x64\Debug\AuctionDBDataSet.xsd
-C:\Users\reyts\Documents\git\Auction\Auction\bin\x64\Debug\AuctionDBDataSet.xss
+C:\Users\reyts\Documents\git\Auction\Auction\obj\x64\Debug\Auction.lotsEdit.resources

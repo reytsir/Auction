@@ -25,7 +25,7 @@ namespace Auction
             this.lotsTableAdapter.Fill(this.auctionDBDataSet.Lots);
 
             lotsBindingSource.Filter = "[Available] = true";
-            pictureBox1.DataBindings.Add("Image", lotsBindingSource, "Image", true);
+            
         }
 
         private void lotsBindingSource_CurrentChanged(object sender, EventArgs e)
@@ -36,6 +36,38 @@ namespace Auction
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
+        }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void maskedTextBoxBid_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void maskedTextBoxPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Подавляем ввод неправильных символов
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string sad = maskedTextBoxBid.Text;
+            int rowIndex = dataGridView1.SelectedCells[0].RowIndex;
+            int priceValue = Convert.ToInt32(dataGridView1.Rows[rowIndex].Cells["priceDataGridViewTextBoxColumn"].Value.ToString());
+
+            if (int.TryParse(sad, out int bidValue) && bidValue > priceValue)
+            {
+                MessageBox.Show("Selected Price: " + priceValue);
+                MessageBox.Show("Ставка не может быть ниже цены или равна ей!");
+            }
         }
     }
 }

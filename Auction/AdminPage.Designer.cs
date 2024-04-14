@@ -29,22 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminPage));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.auctionDBDataSet = new Auction.AuctionDBDataSet();
-            this.lotsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.lotsTableAdapter = new Auction.AuctionDBDataSetTableAdapters.LotsTableAdapter();
-            this.usersTableAdapter = new Auction.AuctionDBDataSetTableAdapters.UsersTableAdapter();
-            this.iDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roleidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loginDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lotNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,12 +43,27 @@
             this.imageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.availableDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.soldToDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lotsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.auctionDBDataSet = new Auction.AuctionDBDataSet();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.iDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roleidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loginDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lotsTableAdapter = new Auction.AuctionDBDataSetTableAdapters.LotsTableAdapter();
+            this.usersTableAdapter = new Auction.AuctionDBDataSetTableAdapters.UsersTableAdapter();
+            this.lotsEditButton = new System.Windows.Forms.Button();
+            this.usersEditButton = new System.Windows.Forms.Button();
+            this.loginButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lotsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.auctionDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.auctionDBDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lotsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -77,7 +82,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.SystemColors.Window;
-            this.label2.Location = new System.Drawing.Point(12, 331);
+            this.label2.Location = new System.Drawing.Point(12, 439);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(389, 34);
             this.label2.TabIndex = 7;
@@ -85,7 +90,13 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDDataGridViewTextBoxColumn,
@@ -97,101 +108,20 @@
             this.availableDataGridViewCheckBoxColumn,
             this.soldToDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.lotsBindingSource;
+            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
             this.dataGridView1.Location = new System.Drawing.Point(12, 46);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1158, 150);
+            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dataGridView1.Size = new System.Drawing.Size(1158, 300);
             this.dataGridView1.TabIndex = 8;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(1176, 46);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(300, 300);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDDataGridViewTextBoxColumn1,
-            this.roleidDataGridViewTextBoxColumn,
-            this.loginDataGridViewTextBoxColumn,
-            this.passwordDataGridViewTextBoxColumn,
-            this.emailDataGridViewTextBoxColumn});
-            this.dataGridView2.DataSource = this.usersBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(12, 368);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1158, 150);
-            this.dataGridView2.TabIndex = 10;
-            // 
-            // usersBindingSource
-            // 
-            this.usersBindingSource.DataMember = "Users";
-            this.usersBindingSource.DataSource = this.auctionDBDataSet;
-            // 
-            // auctionDBDataSet
-            // 
-            this.auctionDBDataSet.DataSetName = "AuctionDBDataSet";
-            this.auctionDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // lotsBindingSource
-            // 
-            this.lotsBindingSource.DataMember = "Lots";
-            this.lotsBindingSource.DataSource = this.auctionDBDataSet;
-            // 
-            // lotsTableAdapter
-            // 
-            this.lotsTableAdapter.ClearBeforeFill = true;
-            // 
-            // usersTableAdapter
-            // 
-            this.usersTableAdapter.ClearBeforeFill = true;
-            // 
-            // iDDataGridViewTextBoxColumn1
-            // 
-            this.iDDataGridViewTextBoxColumn1.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn1.HeaderText = "Код";
-            this.iDDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.iDDataGridViewTextBoxColumn1.Name = "iDDataGridViewTextBoxColumn1";
-            // 
-            // roleidDataGridViewTextBoxColumn
-            // 
-            this.roleidDataGridViewTextBoxColumn.DataPropertyName = "Role_id";
-            this.roleidDataGridViewTextBoxColumn.HeaderText = "Код роли";
-            this.roleidDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.roleidDataGridViewTextBoxColumn.Name = "roleidDataGridViewTextBoxColumn";
-            this.roleidDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // loginDataGridViewTextBoxColumn
-            // 
-            this.loginDataGridViewTextBoxColumn.DataPropertyName = "Login";
-            this.loginDataGridViewTextBoxColumn.HeaderText = "Логин";
-            this.loginDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.loginDataGridViewTextBoxColumn.Name = "loginDataGridViewTextBoxColumn";
-            this.loginDataGridViewTextBoxColumn.Width = 175;
-            // 
-            // passwordDataGridViewTextBoxColumn
-            // 
-            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
-            this.passwordDataGridViewTextBoxColumn.HeaderText = "Пароль";
-            this.passwordDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
-            this.passwordDataGridViewTextBoxColumn.Width = 175;
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "Электронная почта";
-            this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            this.emailDataGridViewTextBoxColumn.Width = 225;
             // 
             // iDDataGridViewTextBoxColumn
             // 
@@ -199,6 +129,7 @@
             this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
             this.iDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.Width = 125;
             // 
             // lotNameDataGridViewTextBoxColumn
             // 
@@ -257,28 +188,185 @@
             this.soldToDataGridViewTextBoxColumn.Name = "soldToDataGridViewTextBoxColumn";
             this.soldToDataGridViewTextBoxColumn.Width = 125;
             // 
+            // lotsBindingSource
+            // 
+            this.lotsBindingSource.DataMember = "Lots";
+            this.lotsBindingSource.DataSource = this.auctionDBDataSet;
+            // 
+            // auctionDBDataSet
+            // 
+            this.auctionDBDataSet.DataSetName = "AuctionDBDataSet";
+            this.auctionDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.lotsBindingSource, "Image", true));
+            this.pictureBox1.Location = new System.Drawing.Point(1177, 46);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(550, 550);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.AllowUserToOrderColumns = true;
+            this.dataGridView2.AllowUserToResizeColumns = false;
+            this.dataGridView2.AllowUserToResizeRows = false;
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn1,
+            this.roleidDataGridViewTextBoxColumn,
+            this.loginDataGridViewTextBoxColumn,
+            this.passwordDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.usersBindingSource;
+            this.dataGridView2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.dataGridView2.Location = new System.Drawing.Point(12, 476);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dataGridView2.Size = new System.Drawing.Size(1158, 300);
+            this.dataGridView2.TabIndex = 10;
+            // 
+            // iDDataGridViewTextBoxColumn1
+            // 
+            this.iDDataGridViewTextBoxColumn1.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn1.HeaderText = "Код";
+            this.iDDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.iDDataGridViewTextBoxColumn1.Name = "iDDataGridViewTextBoxColumn1";
+            this.iDDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // roleidDataGridViewTextBoxColumn
+            // 
+            this.roleidDataGridViewTextBoxColumn.DataPropertyName = "Role_id";
+            this.roleidDataGridViewTextBoxColumn.HeaderText = "Код роли";
+            this.roleidDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.roleidDataGridViewTextBoxColumn.Name = "roleidDataGridViewTextBoxColumn";
+            this.roleidDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // loginDataGridViewTextBoxColumn
+            // 
+            this.loginDataGridViewTextBoxColumn.DataPropertyName = "Login";
+            this.loginDataGridViewTextBoxColumn.HeaderText = "Логин";
+            this.loginDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.loginDataGridViewTextBoxColumn.Name = "loginDataGridViewTextBoxColumn";
+            this.loginDataGridViewTextBoxColumn.Width = 175;
+            // 
+            // passwordDataGridViewTextBoxColumn
+            // 
+            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
+            this.passwordDataGridViewTextBoxColumn.HeaderText = "Пароль";
+            this.passwordDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
+            this.passwordDataGridViewTextBoxColumn.Width = 175;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Электронная почта";
+            this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.Width = 225;
+            // 
+            // usersBindingSource
+            // 
+            this.usersBindingSource.DataMember = "Users";
+            this.usersBindingSource.DataSource = this.auctionDBDataSet;
+            // 
+            // lotsTableAdapter
+            // 
+            this.lotsTableAdapter.ClearBeforeFill = true;
+            // 
+            // usersTableAdapter
+            // 
+            this.usersTableAdapter.ClearBeforeFill = true;
+            // 
+            // lotsEditButton
+            // 
+            this.lotsEditButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.lotsEditButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.lotsEditButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.lotsEditButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.lotsEditButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lotsEditButton.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lotsEditButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.lotsEditButton.Location = new System.Drawing.Point(12, 352);
+            this.lotsEditButton.Name = "lotsEditButton";
+            this.lotsEditButton.Size = new System.Drawing.Size(632, 75);
+            this.lotsEditButton.TabIndex = 11;
+            this.lotsEditButton.Text = "Редактирование лотов";
+            this.lotsEditButton.UseVisualStyleBackColor = false;
+            this.lotsEditButton.Click += new System.EventHandler(this.lotsEditButton_Click);
+            // 
+            // usersEditButton
+            // 
+            this.usersEditButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.usersEditButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.usersEditButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.usersEditButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.usersEditButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.usersEditButton.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.usersEditButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.usersEditButton.Location = new System.Drawing.Point(12, 782);
+            this.usersEditButton.Name = "usersEditButton";
+            this.usersEditButton.Size = new System.Drawing.Size(632, 75);
+            this.usersEditButton.TabIndex = 12;
+            this.usersEditButton.Text = "Редактирование пользователей";
+            this.usersEditButton.UseVisualStyleBackColor = false;
+            // 
+            // loginButton
+            // 
+            this.loginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.loginButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.loginButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.loginButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.loginButton.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.loginButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.loginButton.Location = new System.Drawing.Point(1177, 782);
+            this.loginButton.Name = "loginButton";
+            this.loginButton.Size = new System.Drawing.Size(299, 75);
+            this.loginButton.TabIndex = 13;
+            this.loginButton.Text = "Выйти";
+            this.loginButton.UseVisualStyleBackColor = false;
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
+            // 
             // AdminPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.ClientSize = new System.Drawing.Size(1482, 703);
-            this.Controls.Add(this.dataGridView2);
+            this.ClientSize = new System.Drawing.Size(1740, 873);
+            this.Controls.Add(this.loginButton);
+            this.Controls.Add(this.usersEditButton);
+            this.Controls.Add(this.lotsEditButton);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdminPage";
             this.Text = "Страница Администрирования";
             this.Load += new System.EventHandler(this.AdminPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lotsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.auctionDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.auctionDBDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lotsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -309,5 +397,8 @@
         private System.Windows.Forms.DataGridViewImageColumn imageDataGridViewImageColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn availableDataGridViewCheckBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn soldToDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button lotsEditButton;
+        private System.Windows.Forms.Button usersEditButton;
+        private System.Windows.Forms.Button loginButton;
     }
 }
