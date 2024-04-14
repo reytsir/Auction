@@ -68,6 +68,6 @@ namespace Auction
                     maskedTextBoxPassword.Text = "";
                 }
             }
-        }
+        }        
     }
 }

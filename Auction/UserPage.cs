@@ -59,15 +59,16 @@ namespace Auction
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string sad = maskedTextBoxBid.Text;
-            int rowIndex = dataGridView1.SelectedCells[0].RowIndex;
-            int priceValue = Convert.ToInt32(dataGridView1.Rows[rowIndex].Cells["priceDataGridViewTextBoxColumn"].Value.ToString());
+            this.Validate();
+            this.lotsBindingSource.EndEdit();
+            this.tableAdapterManager1.UpdateAll(this.auctionDBDataSet);
+            this.Refresh();
+        }
 
-            if (int.TryParse(sad, out int bidValue) && bidValue > priceValue)
-            {
-                MessageBox.Show("Selected Price: " + priceValue);
-                MessageBox.Show("Ставка не может быть ниже цены или равна ей!");
-            }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.tableAdapterManager1.UpdateAll(this.auctionDBDataSet);
+            this.Refresh();
         }
     }
 }

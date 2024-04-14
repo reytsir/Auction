@@ -30,6 +30,7 @@ namespace Auction
             this.lotsBindingSource.EndEdit();
             this.tableAdapterManager1.UpdateAll(this.auctionDBDataSet);
             this.Refresh();
+            
         }
 
         private void bindingNavigator1_RefreshItems(object sender, EventArgs e)

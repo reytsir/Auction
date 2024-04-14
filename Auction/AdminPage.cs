@@ -34,12 +34,25 @@ namespace Auction
         private void loginButton_Click(object sender, EventArgs e)
         {
             this.Close();
+            
         }
 
         private void lotsEditButton_Click(object sender, EventArgs e)
         {
             Form lotsEdit = new lotsEdit();
             lotsEdit.Show();
+        }
+
+        private void usersEditButton_Click(object sender, EventArgs e)
+        {
+            Form userEdit = new userEdit();
+            userEdit.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.tableAdapterManager1.UpdateAll(this.auctionDBDataSet);
+            this.Refresh();
         }
     }
 }

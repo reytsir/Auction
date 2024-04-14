@@ -25,3 +25,4 @@ C:\Users\reyts\Documents\git\Auction\Auction\obj\x64\Debug\Auction.csproj.CoreCo
 C:\Users\reyts\Documents\git\Auction\Auction\obj\x64\Debug\Auction.exe
 C:\Users\reyts\Documents\git\Auction\Auction\obj\x64\Debug\Auction.pdb
 C:\Users\reyts\Documents\git\Auction\Auction\obj\x64\Debug\Auction.lotsEdit.resources
+C:\Users\reyts\Documents\git\Auction\Auction\obj\x64\Debug\Auction.userEdit.resources
