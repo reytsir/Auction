@@ -45,7 +45,8 @@ namespace Auction
 
                         if (roleId == 1)
                         {
-                            
+                            Form AdminPage = new AdminPage();
+                            AdminPage.Show();
                             // Perform any additional actions for users with Role_id 1
                         }
                         else if (roleId == 2)
