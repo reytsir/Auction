@@ -59,10 +59,30 @@ namespace Auction
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.lotsBindingSource.EndEdit();
-            this.tableAdapterManager1.UpdateAll(this.auctionDBDataSet);
-            this.Refresh();
+            if (!string.IsNullOrEmpty(maskedTextBoxBid.Text))
+            {
+                int rowIndex = dataGridView1.SelectedCells[0].RowIndex;
+                double currentBid = Convert.ToInt32(dataGridView1.Rows[rowIndex].Cells["priceDataGridViewTextBoxColumn"].Value.ToString());
+                double upperBid = Convert.ToInt64(maskedTextBoxBid.Text);
+                
+                if (currentBid >= upperBid)
+                {
+                    MessageBox.Show("Ставка должна быть выше актуальной");
+                }
+                else
+                {
+                    maskedTextBoxBind.Text=maskedTextBoxBid.Text;
+                    this.Validate();
+                    this.lotsBindingSource.EndEdit();
+                    this.tableAdapterManager1.UpdateAll(this.auctionDBDataSet);
+                    this.Refresh();
+                    maskedTextBoxBid.Text = "";
+                }
+            }
+            else
+            {
+                MessageBox.Show("Вы не указали ставку!");
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

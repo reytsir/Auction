@@ -51,6 +51,8 @@ namespace Auction
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Validate();
+            this.lotsBindingSource.EndEdit();
             this.tableAdapterManager1.UpdateAll(this.auctionDBDataSet);
             this.Refresh();
         }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserPage));
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -46,15 +46,14 @@
             this.availableDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.loginButton = new System.Windows.Forms.Button();
             this.maskedTextBoxBid = new System.Windows.Forms.MaskedTextBox();
-            this.lotsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.tableAdapterManager1 = new Auction.AuctionDBDataSetTableAdapters.TableAdapterManager();
+            this.maskedTextBoxBind = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lotsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.auctionDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lotsBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -101,14 +100,14 @@
             this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDDataGridViewTextBoxColumn,
@@ -223,20 +222,14 @@
             // 
             this.maskedTextBoxBid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
             this.maskedTextBoxBid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.maskedTextBoxBid.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.lotsBindingSource1, "Price", true));
-            this.maskedTextBoxBid.Font = new System.Drawing.Font("Bahnschrift", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.maskedTextBoxBid.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.maskedTextBoxBid.ForeColor = System.Drawing.SystemColors.Window;
-            this.maskedTextBoxBid.Location = new System.Drawing.Point(530, 459);
+            this.maskedTextBoxBid.Location = new System.Drawing.Point(530, 470);
             this.maskedTextBoxBid.Name = "maskedTextBoxBid";
-            this.maskedTextBoxBid.Size = new System.Drawing.Size(324, 80);
+            this.maskedTextBoxBid.Size = new System.Drawing.Size(324, 56);
             this.maskedTextBoxBid.TabIndex = 11;
             this.maskedTextBoxBid.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBoxBid_MaskInputRejected);
             this.maskedTextBoxBid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.maskedTextBoxPassword_KeyPress);
-            // 
-            // lotsBindingSource1
-            // 
-            this.lotsBindingSource1.DataMember = "Lots";
-            this.lotsBindingSource1.DataSource = this.auctionDBDataSet;
             // 
             // button1
             // 
@@ -280,6 +273,18 @@
             this.tableAdapterManager1.UpdateOrder = Auction.AuctionDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager1.UsersTableAdapter = null;
             // 
+            // maskedTextBoxBind
+            // 
+            this.maskedTextBoxBind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.maskedTextBoxBind.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.maskedTextBoxBind.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.lotsBindingSource, "Price", true));
+            this.maskedTextBoxBind.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.maskedTextBoxBind.ForeColor = System.Drawing.SystemColors.Window;
+            this.maskedTextBoxBind.Location = new System.Drawing.Point(530, 470);
+            this.maskedTextBoxBind.Name = "maskedTextBoxBind";
+            this.maskedTextBoxBind.Size = new System.Drawing.Size(324, 56);
+            this.maskedTextBoxBind.TabIndex = 16;
+            // 
             // UserPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -293,6 +298,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.maskedTextBoxBind);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UserPage";
@@ -302,7 +308,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.lotsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.auctionDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lotsBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -326,8 +331,8 @@
         private System.Windows.Forms.Button loginButton;
         private System.Windows.Forms.MaskedTextBox maskedTextBoxBid;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.BindingSource lotsBindingSource1;
         private System.Windows.Forms.Button button2;
         private AuctionDBDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxBind;
     }
 }
