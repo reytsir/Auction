@@ -28,10 +28,17 @@ namespace Auction
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.usersBindingSource.EndEdit();
-            this.tableAdapterManager1.UpdateAll(this.auctionDBDataSet);
-            this.Refresh();
+            if (maskedTextBox1 != null && maskedTextBox2 != null && maskedTextBox3 != null && maskedTextBoxBid != null)
+            {
+                this.Validate();
+                this.usersBindingSource.EndEdit();
+                this.tableAdapterManager1.UpdateAll(this.auctionDBDataSet);
+                this.Refresh();
+            }
+            else
+            {
+                MessageBox.Show("Вы ввели не все данные");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

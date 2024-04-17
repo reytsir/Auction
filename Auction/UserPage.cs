@@ -53,7 +53,7 @@ namespace Auction
             char number = e.KeyChar;
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
-                e.Handled = true; // Подавляем ввод неправильных символов
+                e.Handled = true; 
             }
         }
 
@@ -75,7 +75,7 @@ namespace Auction
                     this.Validate();
                     this.lotsBindingSource.EndEdit();
                     this.tableAdapterManager1.UpdateAll(this.auctionDBDataSet);
-                    this.Refresh();
+                    this.Refresh();                    
                     maskedTextBoxBid.Text = "";
                 }
             }
@@ -87,8 +87,19 @@ namespace Auction
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.Validate();            
+            this.lotsBindingSource.CancelEdit();
             this.tableAdapterManager1.UpdateAll(this.auctionDBDataSet);
             this.Refresh();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {            
+            this.Validate();
+            this.lotsBindingSource.CancelEdit();
+            this.tableAdapterManager1.UpdateAll(this.auctionDBDataSet);       
+            this.Refresh();
+
         }
     }
 }

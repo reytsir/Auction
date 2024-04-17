@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Auction.AuctionDBDataSetTableAdapters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
+using System.Net.Configuration;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -47,27 +49,52 @@ namespace Auction
                         {
                             Form AdminPage = new AdminPage();
                             AdminPage.Show();
-                            // Perform any additional actions for users with Role_id 1
+                            
                         }
                         else if (roleId == 2)
                         {
                             Form UserPage = new UserPage();
                             UserPage.Show();
-                            // Perform any additional actions for users with Role_id 2
+                            
                             
                         }
 
-                        // Perform any additional actions after successful login
+                        
                     }
                     else
                     {
                         MessageBox.Show("Неправильный логин или пароль");
-                        // Clear the MaskedTextBox controls or any other action after failed login
+                        
                     }
                     maskedTextBoxLogin.Text = "";
                     maskedTextBoxPassword.Text = "";
                 }
             }
-        }        
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            // Iterate through all open forms
+            foreach (Form form in Application.OpenForms)
+            {
+                // Check if the form contains a UserPage form
+                if (form.Controls.ContainsKey("UserPage"))
+                {
+                    // Access the UserPage form and perform actions
+                    UserPage userPage = (UserPage)form.Controls["UserPage"];
+                    userPage.Validate();
+                    userPage.Refresh();
+                    foreach(BindingSource bindingSource in userPage.Controls.OfType<BindingSource>())
+                    {
+                        bindingSource.CancelEdit();
+                    }
+                    foreach(TableAdapterManager tableAdapterManager in userPage.Controls.OfType<TableAdapterManager>())
+                    {
+                        //foreach(DataSet dataSet in userPage.Controls.OfType<DataSet>())
+                        //tableAdapterManager.UpdateAll(userPage.dataSet);
+                    }
+                }
+            }
+        }
     }
 }

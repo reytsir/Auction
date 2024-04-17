@@ -35,6 +35,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lotNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.startPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.imageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.availableDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.soldToDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lotsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.auctionDBDataSet = new Auction.AuctionDBDataSet();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -52,14 +60,6 @@
             this.loginButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.tableAdapterManager1 = new Auction.AuctionDBDataSetTableAdapters.TableAdapterManager();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lotNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.startPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.imageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.availableDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.soldToDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lotsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.auctionDBDataSet)).BeginInit();
@@ -124,6 +124,71 @@
             this.dataGridView1.Size = new System.Drawing.Size(1158, 300);
             this.dataGridView1.TabIndex = 8;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "Код";
+            this.iDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // lotNameDataGridViewTextBoxColumn
+            // 
+            this.lotNameDataGridViewTextBoxColumn.DataPropertyName = "LotName";
+            this.lotNameDataGridViewTextBoxColumn.HeaderText = "Наименование";
+            this.lotNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.lotNameDataGridViewTextBoxColumn.Name = "lotNameDataGridViewTextBoxColumn";
+            this.lotNameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // descriptionDataGridViewTextBoxColumn
+            // 
+            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
+            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Описание";
+            this.descriptionDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
+            this.descriptionDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // startPriceDataGridViewTextBoxColumn
+            // 
+            this.startPriceDataGridViewTextBoxColumn.DataPropertyName = "StartPrice";
+            this.startPriceDataGridViewTextBoxColumn.HeaderText = "Начальная цена, Р";
+            this.startPriceDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.startPriceDataGridViewTextBoxColumn.Name = "startPriceDataGridViewTextBoxColumn";
+            this.startPriceDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // priceDataGridViewTextBoxColumn
+            // 
+            this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
+            this.priceDataGridViewTextBoxColumn.HeaderText = "Актуальная цена, Р";
+            this.priceDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
+            this.priceDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // imageDataGridViewImageColumn
+            // 
+            this.imageDataGridViewImageColumn.DataPropertyName = "Image";
+            this.imageDataGridViewImageColumn.HeaderText = "Image";
+            this.imageDataGridViewImageColumn.MinimumWidth = 6;
+            this.imageDataGridViewImageColumn.Name = "imageDataGridViewImageColumn";
+            this.imageDataGridViewImageColumn.Visible = false;
+            this.imageDataGridViewImageColumn.Width = 125;
+            // 
+            // availableDataGridViewCheckBoxColumn
+            // 
+            this.availableDataGridViewCheckBoxColumn.DataPropertyName = "Available";
+            this.availableDataGridViewCheckBoxColumn.HeaderText = "В торгах";
+            this.availableDataGridViewCheckBoxColumn.MinimumWidth = 6;
+            this.availableDataGridViewCheckBoxColumn.Name = "availableDataGridViewCheckBoxColumn";
+            this.availableDataGridViewCheckBoxColumn.Width = 75;
+            // 
+            // soldToDataGridViewTextBoxColumn
+            // 
+            this.soldToDataGridViewTextBoxColumn.DataPropertyName = "SoldTo";
+            this.soldToDataGridViewTextBoxColumn.HeaderText = "Продано";
+            this.soldToDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.soldToDataGridViewTextBoxColumn.Name = "soldToDataGridViewTextBoxColumn";
+            this.soldToDataGridViewTextBoxColumn.Width = 125;
             // 
             // lotsBindingSource
             // 
@@ -240,7 +305,7 @@
             this.lotsEditButton.ForeColor = System.Drawing.SystemColors.Window;
             this.lotsEditButton.Location = new System.Drawing.Point(12, 352);
             this.lotsEditButton.Name = "lotsEditButton";
-            this.lotsEditButton.Size = new System.Drawing.Size(632, 75);
+            this.lotsEditButton.Size = new System.Drawing.Size(694, 75);
             this.lotsEditButton.TabIndex = 11;
             this.lotsEditButton.Text = "Редактирование лотов";
             this.lotsEditButton.UseVisualStyleBackColor = false;
@@ -257,7 +322,7 @@
             this.usersEditButton.ForeColor = System.Drawing.SystemColors.Window;
             this.usersEditButton.Location = new System.Drawing.Point(12, 782);
             this.usersEditButton.Name = "usersEditButton";
-            this.usersEditButton.Size = new System.Drawing.Size(632, 75);
+            this.usersEditButton.Size = new System.Drawing.Size(694, 75);
             this.usersEditButton.TabIndex = 12;
             this.usersEditButton.Text = "Редактирование пользователей";
             this.usersEditButton.UseVisualStyleBackColor = false;
@@ -304,71 +369,6 @@
             this.tableAdapterManager1.RolesTableAdapter = null;
             this.tableAdapterManager1.UpdateOrder = Auction.AuctionDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager1.UsersTableAdapter = this.usersTableAdapter;
-            // 
-            // iDDataGridViewTextBoxColumn
-            // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "Код";
-            this.iDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            this.iDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // lotNameDataGridViewTextBoxColumn
-            // 
-            this.lotNameDataGridViewTextBoxColumn.DataPropertyName = "LotName";
-            this.lotNameDataGridViewTextBoxColumn.HeaderText = "Наименование";
-            this.lotNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.lotNameDataGridViewTextBoxColumn.Name = "lotNameDataGridViewTextBoxColumn";
-            this.lotNameDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // descriptionDataGridViewTextBoxColumn
-            // 
-            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
-            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Описание";
-            this.descriptionDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
-            this.descriptionDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // startPriceDataGridViewTextBoxColumn
-            // 
-            this.startPriceDataGridViewTextBoxColumn.DataPropertyName = "StartPrice";
-            this.startPriceDataGridViewTextBoxColumn.HeaderText = "Начальная цена, Р";
-            this.startPriceDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.startPriceDataGridViewTextBoxColumn.Name = "startPriceDataGridViewTextBoxColumn";
-            this.startPriceDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // priceDataGridViewTextBoxColumn
-            // 
-            this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
-            this.priceDataGridViewTextBoxColumn.HeaderText = "Актуальная цена, Р";
-            this.priceDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
-            this.priceDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // imageDataGridViewImageColumn
-            // 
-            this.imageDataGridViewImageColumn.DataPropertyName = "Image";
-            this.imageDataGridViewImageColumn.HeaderText = "Image";
-            this.imageDataGridViewImageColumn.MinimumWidth = 6;
-            this.imageDataGridViewImageColumn.Name = "imageDataGridViewImageColumn";
-            this.imageDataGridViewImageColumn.Visible = false;
-            this.imageDataGridViewImageColumn.Width = 125;
-            // 
-            // availableDataGridViewCheckBoxColumn
-            // 
-            this.availableDataGridViewCheckBoxColumn.DataPropertyName = "Available";
-            this.availableDataGridViewCheckBoxColumn.HeaderText = "В торгах";
-            this.availableDataGridViewCheckBoxColumn.MinimumWidth = 6;
-            this.availableDataGridViewCheckBoxColumn.Name = "availableDataGridViewCheckBoxColumn";
-            this.availableDataGridViewCheckBoxColumn.Width = 75;
-            // 
-            // soldToDataGridViewTextBoxColumn
-            // 
-            this.soldToDataGridViewTextBoxColumn.DataPropertyName = "SoldTo";
-            this.soldToDataGridViewTextBoxColumn.HeaderText = "Продано";
-            this.soldToDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.soldToDataGridViewTextBoxColumn.Name = "soldToDataGridViewTextBoxColumn";
-            this.soldToDataGridViewTextBoxColumn.Width = 125;
             // 
             // AdminPage
             // 
